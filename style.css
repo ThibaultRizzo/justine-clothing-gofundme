@@ -1,0 +1,63 @@
+body {
+  background-color: #f0f0f075;
+  margin: 0;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  background-color: #faf5e7;
+  box-shadow: 0px 0px 14px 1px #e8e8e8;
+}
+.logo {
+  width: 40vw;
+}
+
+#bank-details {
+  margin: 0 2vw;
+  height: 100vh;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+}
+
+.bubble {
+  border-radius: 10px;
+  height: 25vh;
+  margin: 5vh 3vw;
+}
+
+.bubble-red {
+  border: 2px solid #c10f46;
+  background: #c10f4633;
+  padding: 0 10px;
+}
+
+.bubble-blue {
+  border: 2px solid #021c5d;
+  background: #021c5d33;
+  padding: 0 10px;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    margin-bottom: 5vh;
+  }
+  #bank-details {
+    flex-wrap: nowrap;
+    height: auto;
+  }
+
+  .bubble {
+    margin: 1vh 3vw;
+    height: auto;
+  }
+
+  .logo {
+    order: -1;
+    height: 30vh;
+    width: auto;
+  }
+}
